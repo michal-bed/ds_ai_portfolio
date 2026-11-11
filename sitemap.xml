@@ -1,3 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://michal-bed.github.io/ds_ai_portfolio/</loc>
+         <lastmod>2026-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://michal-bed.github.io/ds_ai_portfolio/friend_finder/</loc>
+         <lastmod>2026-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://michal-bed.github.io/ds_ai_portfolio/halfmarathon_estimator/</loc>
+         <lastmod>2026-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://michal-bed.github.io/ds_ai_portfolio/iris/</loc>
+         <lastmod>2026-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://michal-bed.github.io/ds_ai_portfolio/language_helper/</loc>
+         <lastmod>2026-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://michal-bed.github.io/ds_ai_portfolio/signal_executor/</loc>
+         <lastmod>2026-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://michal-bed.github.io/ds_ai_portfolio/signal_sender/</loc>
+         <lastmod>2026-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://michal-bed.github.io/ds_ai_portfolio/titanic/</loc>
+         <lastmod>2026-11-11</lastmod>
+    </url>
 </urlset>
