@@ -1,0 +1,1334 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="My Data Science &amp; AI Portfolio!">
+      
+      
+        <meta name="author" content="Michał Bednarczyk">
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../halfmarathon_estimator/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Lingilo - language helper - My Python, AI &amp; Machine Learning Portfolio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lingilo-personal-ai-language-assistant" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="My Python, AI &amp; Machine Learning Portfolio" class="md-header__button md-logo" aria-label="My Python, AI &amp; Machine Learning Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Python, AI &amp; Machine Learning Portfolio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lingilo - language helper
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/michal-bed/ds_ai_portfolio" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    michal-bed/ds_ai_portfolio
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="My Python, AI &amp; Machine Learning Portfolio" class="md-nav__button md-logo" aria-label="My Python, AI &amp; Machine Learning Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    My Python, AI &amp; Machine Learning Portfolio
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/michal-bed/ds_ai_portfolio" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    michal-bed/ds_ai_portfolio
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    My AI &amp; Machine Learning Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    My AI &amp; Machine Learning Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lingilo - language helper
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lingilo - language helper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#live-application-link-httpslingilo-by-mb-v1streamlitapp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Live Application Link: https://lingilo-by-mb-v1.streamlit.app/
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Project Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📸 System Screenshots
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-features-learning-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Core Features &amp; Learning Modules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Core Features &amp; Learning Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-smart-flashcards-spaced-repetition-system-sm-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 1. Smart Flashcards &amp; Spaced Repetition System (SM-2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-text-correction-with-explanations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✍️ 2. Text Correction with Explanations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-pronunciation-training-audio-generation-tts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗣️ 3. Pronunciation Training &amp; Audio Generation (TTS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-voice-notes-with-transcription" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎙️ 4. Voice Notes with Transcription
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-knowledge-base-with-semantic-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 5. Knowledge Base with Semantic Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-chat-with-a-language-expert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💬 6. Chat with a Language Expert
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-models-used-their-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤖 AI Models Used &amp; Their Roles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 AI Models Used &amp; Their Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-large-language-models-llms-groq-openai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Large Language Models (LLMs) — Groq &amp; OpenAI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-instructor-pydantic-structured-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Instructor + Pydantic (Structured Outputs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-whisper-model-whisper-large-v3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Whisper Model (whisper-large-v3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-vector-models-sentence-transformers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Vector Models (sentence-transformers)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-ai-telemetry-langfuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. AI Telemetry — Langfuse
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infrastructure-tech-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Infrastructure &amp; Tech Stack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#production-case-study-resolving-aws-websocket-cookie-drops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💥 Production Case Study: Resolving AWS WebSocket Cookie Drops
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💥 Production Case Study: Resolving AWS WebSocket Cookie Drops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applied-engineering-solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Applied Engineering Solution
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../halfmarathon_estimator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Half-marathon finish time predictor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../friend_finder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Friend finder &amp; peer matching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    My Data Analysis Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    My Data Analysis Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iris/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Iris
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../titanic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Titanic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Other Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Other Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../signal_executor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MT5/MT4 Signal Executor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../signal_sender/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MT5/MT4 Signal Sender
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#live-application-link-httpslingilo-by-mb-v1streamlitapp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Live Application Link: https://lingilo-by-mb-v1.streamlit.app/
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Project Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📸 System Screenshots
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-features-learning-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Core Features &amp; Learning Modules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Core Features &amp; Learning Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-smart-flashcards-spaced-repetition-system-sm-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 1. Smart Flashcards &amp; Spaced Repetition System (SM-2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-text-correction-with-explanations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✍️ 2. Text Correction with Explanations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-pronunciation-training-audio-generation-tts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗣️ 3. Pronunciation Training &amp; Audio Generation (TTS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-voice-notes-with-transcription" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎙️ 4. Voice Notes with Transcription
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-knowledge-base-with-semantic-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 5. Knowledge Base with Semantic Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-chat-with-a-language-expert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💬 6. Chat with a Language Expert
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-models-used-their-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤖 AI Models Used &amp; Their Roles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 AI Models Used &amp; Their Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-large-language-models-llms-groq-openai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Large Language Models (LLMs) — Groq &amp; OpenAI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-instructor-pydantic-structured-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Instructor + Pydantic (Structured Outputs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-whisper-model-whisper-large-v3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Whisper Model (whisper-large-v3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-vector-models-sentence-transformers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Vector Models (sentence-transformers)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-ai-telemetry-langfuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. AI Telemetry — Langfuse
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infrastructure-tech-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Infrastructure &amp; Tech Stack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#production-case-study-resolving-aws-websocket-cookie-drops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💥 Production Case Study: Resolving AWS WebSocket Cookie Drops
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💥 Production Case Study: Resolving AWS WebSocket Cookie Drops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applied-engineering-solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Applied Engineering Solution
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="lingilo-personal-ai-language-assistant">🌍 Lingilo — Personal AI Language Assistant</h1>
+<h3 id="live-application-link-httpslingilo-by-mb-v1streamlitapp"><strong>Live Application Link:</strong> <a href="https://lingilo-by-mb-v1.streamlit.app/">https://lingilo-by-mb-v1.streamlit.app/</a></h3>
+<p align="center">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="screenshots/login_screen.png" data-desc-position="bottom"><img src="screenshots/login_screen.png" width="700" alt="Lingilo Interface"></a>
+</p>
+
+<h2 id="project-overview">📝 Project Overview</h2>
+<p><strong>Lingilo</strong> is an advanced, AI-powered web application designed to comprehensively support foreign language learning. It combines traditional memorization techniques (Spaced Repetition) with the power of Large Language Models (LLMs), semantic search, and speech transcription. </p>
+<p>Lingilo is not just another translator – it is an intelligent environment that helps users understand context, analyze grammar, practice pronunciation, and systematically acquire new vocabulary.</p>
+<hr>
+<h2 id="system-screenshots">📸 System Screenshots</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Login &amp; Welcome Screen</th>
+<th style="text-align: center;">Main Application Dashboard</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="screenshots/login_screen.png" data-desc-position="bottom"><img src="screenshots/login_screen.png" width="380" alt="Lingilo Login Screen"></a></td>
+<td style="text-align: center;"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="screenshots/dashboard.png" data-desc-position="bottom"><img src="screenshots/dashboard.png" width="380" alt="Lingilo Dashboard"></a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Smart Flashcards (SM-2)</th>
+<th style="text-align: center;">Text Correction Module</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="screenshots/flashcards.png" data-desc-position="bottom"><img src="screenshots/flashcards.png" width="380" alt="Lingilo Flashcards"></a></td>
+<td style="text-align: center;"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="screenshots/correction.png" data-desc-position="bottom"><img src="screenshots/correction.png" width="380" alt="Lingilo Text Correction"></a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="core-features-learning-modules">🚀 Core Features &amp; Learning Modules</h2>
+<p>The application offers 6 main modes to support users at every stage of their learning journey:</p>
+<h3 id="1-smart-flashcards-spaced-repetition-system-sm-2">📚 1. Smart Flashcards &amp; Spaced Repetition System (SM-2)</h3>
+<ul>
+<li><strong>SM-2 Algorithm:</strong> Features a built-in Spaced Repetition algorithm that optimizes learning time by showing words exactly when users are about to forget them.</li>
+<li><strong>AI Flashcard Creator:</strong> Just by typing a single word, the AI automatically generates its base form, grammatical features (case, tense, gender), definitions, inflections, and example sentences with translations.</li>
+<li><strong>Authentic Context:</strong> Integration with the open <em>Tatoeba</em> database allows fetching real-life example sentences with a single click.</li>
+</ul>
+<h3 id="2-text-correction-with-explanations">✍️ 2. Text Correction with Explanations</h3>
+<ul>
+<li>Analyzes text written in a foreign language. The AI not only corrects grammatical and stylistic errors but also explains point-by-point why the changes were made and what caused the mistakes.</li>
+</ul>
+<h3 id="3-pronunciation-training-audio-generation-tts">🗣️ 3. Pronunciation Training &amp; Audio Generation (TTS)</h3>
+<ul>
+<li>Converts any text or translated sentence into natural-sounding speech (Text-To-Speech) to practice the correct accent.</li>
+<li>Allows recording personal pronunciations and attaching them directly to the flashcards.</li>
+</ul>
+<h3 id="4-voice-notes-with-transcription">🎙️ 4. Voice Notes with Transcription</h3>
+<ul>
+<li>Records voice notes in a foreign language, and the system automatically transcribes them into text using advanced speech recognition models, perfect for practicing spontaneous speaking.</li>
+</ul>
+<h3 id="5-knowledge-base-with-semantic-search">🧠 5. Knowledge Base with Semantic Search</h3>
+<ul>
+<li>All translations, expert queries, and voice notes are saved in the asynchronous database.</li>
+<li>Searches are performed "by meaning" (vector-based). If a user searches for <em>"pets"</em>, the system finds notes containing <em>"dog"</em> or <em>"cat"</em>, even if the exact keyword isn't present in the text.</li>
+</ul>
+<h3 id="6-chat-with-a-language-expert">💬 6. Chat with a Language Expert</h3>
+<ul>
+<li>A dedicated module to ask complex linguistic questions (e.g., <em>"What is the difference between 'make' and 'do' in English?"</em>) and receive a comprehensive, educational explanation from the AI.</li>
+</ul>
+<hr>
+<h2 id="ai-models-used-their-roles">🤖 AI Models Used &amp; Their Roles</h2>
+<p>Lingilo is a truly AI-Native system utilizing specialized models for complex pipeline tasks:</p>
+<h3 id="1-large-language-models-llms-groq-openai">1. Large Language Models (LLMs) — Groq &amp; OpenAI</h3>
+<p>Provides precise translations, error corrections, and expert chats. It allows users to choose between lightning-fast, free open-source models via the <strong>Groq</strong> cloud (e.g., the <em>Llama 3</em> family) and advanced models from <strong>OpenAI</strong> (e.g., <em>gpt-4o</em>), featuring a safe fallback to Groq if a paid API key is missing.</p>
+<h3 id="2-instructor-pydantic-structured-outputs">2. Instructor + Pydantic (Structured Outputs)</h3>
+<p>Forces unstructured LLM text outputs into strict, validated JSON objects based on Pydantic models. Used for parsing grammatical features (extracting tense, number, person, case) securely before adding entries to the database.</p>
+<h3 id="3-whisper-model-whisper-large-v3">3. Whisper Model (<code>whisper-large-v3</code>)</h3>
+<p>An advanced multilingual speech recognition model run asynchronously via OpenAI / Groq API to transcribe user voice recordings into clean text.</p>
+<h3 id="4-vector-models-sentence-transformers">4. Vector Models (<code>sentence-transformers</code>)</h3>
+<p>Uses a locally loaded <code>paraphrase-multilingual-MiniLM-L12-v2</code> model to generate multi-dimensional vector embeddings, powering the deep semantic search engine.</p>
+<h3 id="5-ai-telemetry-langfuse">5. AI Telemetry — Langfuse</h3>
+<p>Integrated using the direct HTTP API (<code>generation-create</code>) to track every AI trace, count token consumption (<code>promptTokens</code>, <code>completionTokens</code>), monitor production API costs, and evaluate generation quality latency.</p>
+<hr>
+<h2 id="infrastructure-tech-stack">🛠️ Infrastructure &amp; Tech Stack</h2>
+<ul>
+<li><strong>Frontend &amp; UI:</strong> Streamlit, Streamlit OAuth (Auth0 secure login).</li>
+<li><strong>Backend &amp; Async Core:</strong> Python 3.11 using native <code>asyncio</code> for high-performance event loop pooling.</li>
+<li><strong>Database Layer:</strong> Asynchronous SQLAlchemy + PostgreSQL (compatible with Neon DB) or SQLite for local environments.</li>
+<li><strong>AI Routing &amp; Tools:</strong> LiteLLM (universal API router), Instructor, Sentence-Transformers.</li>
+</ul>
+<hr>
+<h2 id="production-case-study-resolving-aws-websocket-cookie-drops">💥 Production Case Study: Resolving AWS WebSocket Cookie Drops</h2>
+<p>!!! danger "Production Issue (Streamlit Community Cloud Infrastructure)"
+    During deployment on Streamlit Community Cloud (AWS server nodes), users faced random logouts upon pressing <strong>F5 (Hard Refresh)</strong>. Investigation revealed that the cloud reverse proxy servers stripped cookie headers during WebSocket upgrade handshakes (<code>GET /_stcore/stream</code>), leading to an empty cookie dict inside Python. Furthermore, executing standard async JavaScript components to poll cookies froze the frontend React render cycle, causing the Auth0 login button to completely disappear from the landing page. This issue was absent in the local development environment (<code>localhost</code>).</p>
+<h3 id="applied-engineering-solution">🛠️ Applied Engineering Solution</h3>
+<p>The bug was mitigated by decoupling the unstable JS cookie management from the unauthenticated landing layout view and implementing a highly stable <strong>Hybrid Query Params Fallback</strong> strategy:</p>
+<pre><code class="language-python"># Synchronous native URL query param parsing for F5 persistence
+url_token = st.query_params.get("session_token")
+if url_token and str(url_token).strip() != "" and url_token != "None":
+    st.session_state.token = {"access_token": url_token}
+    st.rerun()
+</code></pre>
+<ol>
+<li><strong>Address Bar Token Mapping:</strong> Upon successful Auth0 redirection, the access token payload is captured and appended safely as a secure query parameter (<code>?session_token=...</code>) directly to the address bar. Since AWS reverse proxies do not strip URL parameters during WebSocket switches, the application securely extracts the token on fresh page loads.</li>
+<li><strong>Unconditional UI Rendering:</strong> The login interface layout was fully insulated from any async initialization blockers. The Auth0 action button renders instantly as pure HTML/JS, ensuring absolute interface stability and preventing rendering deadlocks.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": true, "zoomable": true, "draggable": true, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
